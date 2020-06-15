@@ -1,10 +1,12 @@
 <template>
   <div class="home">
-    <dir class="list">
+    <div class="list">
       <li v-for="company in companies" :key="company.id" class="item">
-        {{company.name}}
+        <router-link :to="'/company/'+company.id">
+          {{company.name}}
+        </router-link>
       </li>
-    </dir>
+    </div>
   </div>
 </template>
 
@@ -24,7 +26,8 @@ export default {
     return {
       companies: db.collection('companies')
     }
-  }
+  },
+  
 }
 </script>
 

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Detail from '../views/Detail.vue'
+import User from '../views/User.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ Vue.use(VueRouter)
     path: '/company/:id',
     name: 'company',
     component: Detail
+  },
+  {
+    path: '/user/:uid',
+    name: 'user',
+    component: User
   },
   {
     path: '/about',

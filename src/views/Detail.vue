@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>hello</h1>
     <div class="company-name">
       会社名：{{company.name}}
     </div>

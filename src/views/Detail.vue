@@ -10,7 +10,7 @@
       v-for="comment in myComments"
       :key="comment.id"
       :cid="comment.id"
-      :uid="currentUser.uid"
+      :uid="comment.uid"
     />
     <Editor :currentUser="currentUser" :currentCompany="company" />
   </div>
